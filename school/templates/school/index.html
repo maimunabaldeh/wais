@@ -1,0 +1,9 @@
+{% if all_classes %}
+    <ul>
+        {% for classe in all_classes %}
+            <li><a href = "/school/{{ classe.pk }}/"> {{ classe }} </a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+<h3>You don't have any class to display</h3>
+{% endif %}
